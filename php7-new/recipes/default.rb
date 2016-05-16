@@ -6,6 +6,10 @@ execute "update the local package cache" do
     command "sudo apt-get update"
 end
 
+execute "Install apache2" do
+    command "sudo apt-get install apache2"
+end
+
 execute "php 7.0" do
     command "sudo apt-get -y install php7.0"
     returns [0, 100]
