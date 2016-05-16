@@ -11,7 +11,7 @@ execute "Install apache2" do
 end
 
 execute "php 7.0" do
-    command "sudo apt-get -y install php7.0"
+    command "sudo apt-get -y install php7.0 --force-yes"
     returns [0, 100]
 end
 
